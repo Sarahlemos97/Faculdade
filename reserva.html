@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <header>
+        <h1>Realize sua Reserva</h1>
+    </header>
+    <hr></hr>
+    <section>
+        <h3>Preencha o formulário abaixo com os seguintes dados para realizar sua reserva:</h3>
+    </section>
+    <section>
+        <form method="get" action="">
+        <fieldset>
+            <legend>Dados do Cliente e da Viagem</legend>
+            <label>Nome Completo</label>
+            <input type="text" required name="nome"><br><br>
+            <label>Email de Contato</label>
+            <input type="text" required name="email"><br><br>
+            <label>Telefone de Contato</label>
+            <input type="text" required name="telefone"><br><br>
+            <label>Quantidade de pessoas</label>
+            <input type="number" required name="pessoas"><br><br>
+            <label>Data de ida</label>
+            <input type="date" required name="data de ida"><br><br>
+            <label>Data de volta</label>
+            <input type="date" required name="data de volta">
+        </fieldset>    
+            
+        <fieldset>
+            <legend>Serviços Desejados</legend>
+            <input type="checkbox" name="passagem" value="passagem">Compra de Passagens<br>
+            <input type="checkbox" name="carro" value="carro">Aluguel de Carro<br>
+            <input type="checkbox" name="hospedagem" value="hospedagem">Reservar Hospedagem<br>
+            <input type="checkbox" name="outros" value="outros">Outros<br>
+            <label>Caso tenha selecionado "Outros", informar sugestões:</label>
+            <input type="text" name="outros"><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Formas de Pagamento</legend>
+            <input type="radio" required name="pagamento" value="credito">Cartão de Crédito<br>
+            <input type="radio" required name="pagamento" value="boleto">Boleto<br>
+            <input type="radio" required name="pagamento" value="pix">Pix<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Prazo de Pagamento</legend>
+            <select name="prazoPagamento">
+                <option value="Avista">A Vista</option>
+                <option value="2x">2x sem juros</option>
+                <option value="4x">4x sem juros</option>
+                <option value="6x">6x sem juros</option>
+                <option value="8x">8x com juros</option>
+                <option value="10x">10x com juros</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Campo para comentários adicionais</legend>
+            <textarea rows="5" name="cometario"></textarea>
+        </fieldset><br>
+
+        <input type="submit">
+
+        </form><br>
+        <hr></hr>
+    <footer>
+        <p>Desenvolvido por Sarah Lemos</p>
+    </footer>
+    </section>
+</body>
+</html>
